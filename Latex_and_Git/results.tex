@@ -1,56 +1,44 @@
 \section{Results}
-Here is where you will describe your significant results. Typically, you will place a number of figures in the results section to illustrate your findings. For example, I tried to use TiKZ to create a simple illustration of the factor structure of general intelligence, but I don't think it's very good (see Figure~\ref{fig:TikZmodel}).
+Key themes, subthemes, and exemplar quotations are
+displayed in Table~\ref{table:theme}. Five key themes were found: (1)
+providers, parents, and adolescents viewed the CDSSYD as helpful for treatment; (2) providers, parents, and
+adolescents differed in their views of the trustworthiness
+of the CDSS-YD, with adults having more trust in the
+data-driven approach of the CDSS-YD and adolescents
+having more trust in the provider’s expertise; (3) parents
+and adolescents saw their providers as having a critical
+role in the use the CDSS-YD; (4) providers, parents, and
+adolescents expressed a desire to understand how the
+questionnaire responses informed the CDSS-YD’s treatment recommendation; and (5) adolescents expressed
+discomfort with sharing their questionnaire results with
+the parents, and they expressed a desire for privacy when
+reviewing the CDSS-YD results with the provider.
 
-\begin{figure}[ht!]
-\centering
-\begin{tikzpicture}[scale=.5,transform shape,auto,node distance=.9cm,
-latent/.style={circle,draw,very thick,inner sep=0pt,minimum size=25mm,align=center},
-manifest/.style={rectangle,draw,very thick,inner sep=0pt,minimum width=30mm,minimum height=10mm},
-paths/.style={->, ultra thick, >=stealth'}]
-\node [manifest] (SI) at (0,0) {Similarities};
-\node [manifest] (VO) [below=of SI] {Vocabulary};
-\node [manifest] (CO) [below=of VO] {Comprehension};
-\node [manifest] (IN) [below=of CO] {Information};
-\node [manifest] (WR) [below=of IN] {Word Reasoning};
-\node [manifest] (BD) [below=of WR] {Block Design};
-\node [manifest] (PS) [below=of BD] {Picture Concepts};
-\node [latent] (g) [left=2.5cm of IN] {\emph{g}};
-\node [latent] (Gc) [right=4.5cm of CO] {Verbal\\ Comprehension};
-\node [latent] (Gv) [right=4.5cm of BD] {Visual\\ Spatial};
-\foreach \all in {SI, VO, CO, IN, WR, BD, PS}
-{
-\draw [paths] (g.east) to node { } (\all.west);
-}
-\foreach \vc in {SI, VO, CO, IN, WR}
-\draw [paths] (Gc.west) to node {} (\vc.east);
-\foreach \vs in {BD, PS}
-\draw [paths] (Gv.west) to node {} (\vs.east);
-\draw [paths, <->] (Gc) edge[bend left] node [left] {} (Gv);
-\end{tikzpicture}
-\caption{\label{fig:TikZmodel} Here is a sample of a TikZ model.}
-\end{figure}
+\begin{longtable}{p{6.5cm} p{8.5cm}}
+  \caption{Key themes regarding provider, parent, and adolescent attitudes toward the CDSS-YD}
+  \label{table:theme} \\
+  \toprule
+  \textbf{Themes} & \textbf{Subthemes} \\
+  \midrule
+  \endfirsthead
 
-In other cases, you might have an image file you want to bring into your document.  That is pretty easy to do as well as you can see in Figure \ref{fig:gearhead}.
+  \multicolumn{2}{c}%
+  {{\bfseries Table \thetable\ (continued)}} \\
+  \toprule
+  \textbf{Themes} & \textbf{Subthemes} \\
+  \midrule
+  \endhead
 
-\begin{figure}[h!] 
-\centering
-\includegraphics[width=0.3\textwidth]{frog.jpeg}
-\caption{\label{fig:gearhead}This is a another figure caption.}
-\end{figure}
-
-Sometimes You may also want to display some tabular data in order to illustrate patterns in your data. Fortunately, You can do this right in \LaTeX.
-
-\begin{table}[h!]
-\centering
-\caption{\label{tab:RTmeans}Reaction times over training in the experimental and control groups.}
-\begin{tabular}{l l c c c}
- \toprule
-                          &              & \multicolumn{3}{c}{Week}\\
-  \cmidrule{3-5}
-                          &              & {One}           & {Two}           & {Three}\\
-  \cmidrule{3-5}
-  \multirow{ 2}{*}{Group} & Experimental &     1008.435    &      986.76     &      859.1     \\
-                          & Control      &     996.23      &      901.67     &      1002.23   \\
   \bottomrule
- \end{tabular}
-\end{table}
+  \endfoot
+
+  Providers, parents, and adolescents viewed the CDSS-YD as helpful for treatment. & Providers, parents, and adolescents viewed the CDSS-YD as an informative and useful tool for personalized treatment planning. \\
+  & Providers, parents, and adolescents believed that use of the CDSS-YD could foster a stronger therapeutic relationship. \\
+  Providers, parents, and adolescents differed in their views of the trustworthiness of the CDSS-YD. & Providers and parents viewed the CDSS-YD as trustworthy because it is research-based and the treatment recommendation is data-driven. \\
+  & Use of the CDSS-YD increased parents’ trust in the provider and their perception of provider expertise. \\
+  & Youth viewed the CDSS-YD treatment recommendation as less trustworthy than a provider recommendation. \\
+  Parents and adolescents saw their providers as having a critical role in the use of the CDSS-YD. & The provider’s opinion of the CDSS-YD treatment recommendation was a facilitator of families’ trust. \\
+  & It is important for the CDSS-YD to be used in the context of a discussion with the provider. \\
+  Providers, parents, and adolescents expressed a desire to understand how the questionnaire responses informed the CDSS-YD’s treatment recommendation. & \\
+  Adolescents expressed discomfort with sharing their questionnaire results with the parents, and they expressed a desire for privacy when reviewing the CDSS-YD results with the provider. & \\
+\end{longtable}

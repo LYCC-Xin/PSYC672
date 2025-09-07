@@ -7,6 +7,8 @@
 \usepackage{tikz}
 \usepackage{amsmath}
 \usepackage{blindtext}
+\usepackage{longtable}
+\usepackage{booktabs}
 \usepackage{tabularx} %great for APA-style Tables
 \usepackage{siunitx} % Required for good table alignmen
 \sisetup{
@@ -16,6 +18,7 @@
 \usepackage{multirow}
 \usepackage{booktabs}
 \usepackage{wrapfig}
+\usepackage{booktabs} % For nice table rules
 \usetikzlibrary{shapes,decorations,arrows,calc,arrows.meta,fit,positioning}
 \tikzset{
     -Latex,auto,node distance =1 cm and 1 cm,semithick,
@@ -28,14 +31,36 @@
 \newcommand{\nonsigFtest}[3]{\textit{F}(#1,#2) = #3, \textit{p}$>$.05}
 
 
-\title{My First Manuscript in \LaTeX  }
-\shorttitle{This is the short title}
-\author{Paul D. Kieffaber}
-\affiliation{College of William \& Mary}
+\title{Adolescent, parent, and provider attitudes toward a machine learning based clinical decision support system for selecting treatment for youth depression}
+\shorttitle{CDSS-YD Attitudes}
+\authorsnames[1,2,1,3,4,{3,5},5,5]{Meredith Gunlicks-Stoessel, Yangchenchen Liu, Catherine Parkhill, Nicole Morrell, Mimi Choy-Brown, Christopher Mehus, Joel Hetler, Gerald August}
+\authorsaffiliations{{Department of Psychiatry \& Behavioral Sciences, University of Minnesota, 2025 E River Parkway, 55414 Minneapolis, MN, USA},{Department of Psychology, University of Minnesota, Minneapolis, MN, USA},{Center for Applied Research and Educational Improvement, University of Minnesota, St. Paul, MN, USA},{School of Social Work, University of Minnesota, St. Paul, MN, USA},{Department of Family Social Science, University of Minnesota, St. Paul, MN, USA}}
 \journal{The Best Psychology Journal EVER!}
-\abstract{\blindtext}
-\keywords{APA style, demonstration}
-\authornote{I would like to thank my dogs for sitting quietly while I worked on this.}
+\abstract{Background: Machine learning based clinical decision support systems (CDSSs) have been proposed as a means
+of advancing personalized treatment planning for disorders, such as depression, that have a multifaceted etiology,
+course, and symptom profile. However, machine learning based models for treatment selection are rare in the field of
+psychiatry. They have also not yet been translated for use in clinical practice. Understanding key stakeholder attitudes
+toward machine learning based CDSSs is critical for developing plans for their implementation that promote uptake
+by both providers and families.
+Methods: In Study 1, a prototype machine learning based Clinical Decision Support System for Youth Depression
+(CDSS-YD) was demonstrated to focus groups of adolescents with a diagnosis of depression (n=9), parents (n=11),
+and behavioral health providers (n=8). Qualitative analysis was used to assess their attitudes towards the CDSS-YD.
+In Study 2, behavioral health providers were trained in the use of the CDSS-YD and they utilized the CDSS-YD in a
+clinical encounter with 6 adolescents and their parents as part of their treatment planning discussion. Following the
+appointment, providers, parents, and adolescents completed a survey about their attitudes regarding the use of the
+CDSS-YD. 
+Results: All stakeholder groups viewed the CDSS-YD as an easy to understand and useful tool for making
+personalized treatment decisions, and families and providers were able to successfully use the CDSS-YD in clinical
+encounters. Parents and adolescents viewed their providers as having a critical role in the use the CDSS-YD, and
+this had implications for the perceived trustworthiness of the CDSS-YD. Providers reported that clinic productivity
+metrics would be the primary barrier to CDSS-YD implementation, with the creation of protected time for training,
+preparation, and use as a key facilitator.
+Conclusions: Machine learning based CDSSs, if proven effective, have the potential to be widely accepted tools for
+personalized treatment planning. Successful implementation will require addressing the system-level barrier of having
+sufficient time and energy to integrate it into practice.}
+\keywords{Clinical decision support systems, Depression, Adolescents, Health care providers, Attitudes}
+\authornote{We have no known conflict of interest to disclose. Correspondence concerns this article should be addressed to Meredith Gunlicks-Stoessel
+mgunlick@umn.edu}
 \leftheader{Alternate page header in man mode}
 
 %-------------- END PREAMBLE  -------------------
@@ -54,7 +79,7 @@
 \input{discussion.tex}
 
 
-\bibliography{references.bib}
+\bibliography{reference_CDSS-YD.bib}
 
 \end{document}
-https://www.overleaf.com/project/64ef8e5b3faa92d4248ddcf9
+https://www.overleaf.com/project/68bc9b6676c27897cbfba1ae
